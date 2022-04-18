@@ -10,10 +10,7 @@ import { LoginAuthInput } from './inputs';
 export class AuthResolver {
     constructor( private readonly authService:AuthService ) {}
 
-    @Query(() => String)
-    async hello() {
-        return 'Hello World!';
-    }
+    
 
     @Mutation(() => UserTokenDto)
     async register(
